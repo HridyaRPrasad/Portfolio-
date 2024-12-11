@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f6f4ec;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            border-bottom: 2px solid #e2c084;
+            display: inline-block;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+        }
+
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            flex: 1 1 45%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .item-title {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .item-description {
+            font-size: 14px;
+            color: #555;
+        }
+
+        .skills {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .skill {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .skill-name {
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .skill-bar {
+            flex: 1;
+            margin-left: 10px;
+            height: 8px;
+            background-color: #ddd;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .skill-bar-fill {
+            height: 100%;
+            background-color: #e2c084;
+        }
+
+        .interests {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .interest {
+            background-color: #e2c084;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .personal-skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill-badge {
+            background-color: #e2c084;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Education Section -->
+        <div class="section">
+            <div class="section-title">Education</div>
+            <div class="content">
+                <div class="item">
+                    <div class="item-title">Multimedia Nusantara University</div>
+                    <div class="item-description">2010 - 2014<br>Visual Communication Design</div>
+                </div>
+                <div class="item">
+                    <div class="item-title">Kristen Kalam Kudus</div>
+                    <div class="item-description">2007 - 2010<br>Senior High School</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Experiences Section -->
+        <div class="section">
+            <div class="section-title">Experiences</div>
+            <div class="content">
+                <div class="item">
+                    <div class="item-title">PT Sketz Indonesia</div>
+                    <div class="item-description">2015 - 2022<br>Senior Graphic Designer</div>
+                </div>
+                <div class="item">
+                    <div class="item-title">Freelance Graphic Designer</div>
+                    <div class="item-description">2015 - Present</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Skills Section -->
+        <div class="section">
+            <div class="section-title">Skills</div>
+            <div class="skills">
+                <div class="skill">
+                    <div class="skill-name">Adobe Illustrator</div>
+                    <div class="skill-bar">
+                        <div class="skill-bar-fill" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">Adobe Photoshop</div>
+                    <div class="skill-bar">
+                        <div class="skill-bar-fill" style="width: 85%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">Adobe Indesign</div>
+                    <div class="skill-bar">
+                        <div class="skill-bar-fill" style="width: 70%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">Adobe Lightroom</div>
+                    <div class="skill-bar">
+                        <div class="skill-bar-fill" style="width: 60%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Interests Section -->
+        <div class="section">
+            <div class="section-title">Interests</div>
+            <div class="interests">
+                <div class="interest">Traveling</div>
+                <div class="interest">Music</div>
+                <div class="interest">Shopping</div>
+            </div>
+        </div>
+
+        <!-- Personal Skills Section -->
+        <div class="section">
+            <div class="section-title">Personal Skills</div>
+            <div class="personal-skills">
+                <div class="skill-badge">Teamwork</div>
+                <div class="skill-badge">Creativity</div>
+                <div class="skill-badge">Communication</div>
+                <div class="skill-badge">Adaptability</div>
+                <div class="skill-badge">Time Management</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+
+
+
+
+
+

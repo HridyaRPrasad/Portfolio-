@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CGet In Touch</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Human Sans', sans-serif;
+            background-color: #021001;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #F7DC8B;
+        }
+
+        .contact-container {
+            display: flex;
+            width: 80%;
+            max-width: 1200px;
+            background-color: #760E05;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        .contact-card {
+            background-color: #760E05;
+            color: #F7DC8B;
+            padding: 40px;
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .contact-card h2 {
+            margin: 0 0 20px;
+            font-size: 5rem;
+            font-family: 'Strippy', sans-serif;
+        }
+
+        .contact-card p {
+            font-size: 1.5rem;
+            margin: 10px 0;
+            line-height: 1.8;
+        }
+
+        .contact-form {
+            padding: 40px;
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .contact-form h2 {
+            margin: 0 0 20px;
+            font-size: 4rem;
+            font-family: 'Strippy', sans-serif;
+            color: #F7DC8B;
+        }
+
+        .contact-form p {
+            margin-bottom: 20px;
+            color: #F7DC8B;
+            font-size: 1.5rem;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid #F7DC8B;
+            border-radius: 5px;
+            background-color: #021001;
+            color: #F7DC8B;
+            font-size: 1.2rem;
+        }
+
+        .contact-form button {
+            background-color: #F7DC8B;
+            color: #760E05;
+            padding: 15px 30px;
+            font-size: 1.5rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .contact-form button:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contact-container">
+        <!-- Left Side Contact Info -->
+        <div class="contact-card">
+            <h2>Contact Us</h2>
+            <p><i class="fas fa-map-marker-alt"></i> 32, Avenue de NewYork,<br> 321904 NewYork</p>
+            <p><i class="fas fa-envelope"></i> hello@loremipsum.com</p>
+            <p><i class="fas fa-phone"></i> +3336 1589 2100</p>
+            <p><i class="fas fa-phone"></i> +3336 1589 2100</p>
+        </div>
+
+        <!-- Right Side Form -->
+        <div class="contact-form">
+            <h2>Get in Touch</h2>
+            <p>Feel free to drop us a line below!</p>
+            <form action="#" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Type your message here..." required></textarea>
+                <button type="submit">SEND</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
+

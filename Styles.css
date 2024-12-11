@@ -1,0 +1,130 @@
+
+        /* Carousel container */
+        .carousel-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            height: 100%
+        }
+
+        /* Cards  */
+        .card {
+            flex: 0 0 25%;
+            width: 1000px;
+            height: 1500px;
+            background-color: #021001;
+            border-radius: 10px;
+            box-shadow: 0 5px 10px #021001(0, 0, 0, 0.3);
+            overflow: hidden;
+            cursor: pointer;
+            transform: scale(0.9);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    
+        /* Text  */
+        .text-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+
+        .big-text {
+            font-size: 6rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #F7DC8B;
+            letter-spacing: 5px;
+            cursor: pointer;
+            position: relative;
+            cursor: default;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+
+        .big-text:hover {
+            animation: pop 0.5s ease-in-out forwards;
+        }
+
+        .image-overlay {
+            position: absolute;
+            z-index: 2;
+            width: 30%;
+            height: auto;
+            right: 10%;
+            bottom: -30%;
+        }
+
+
+        /* Tooltip styling */
+        .tooltip-box {
+            position: absolute;
+            top: -80px;
+            left: 50%;
+            transform: translateX(-50%);
+
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 1rem;
+            display: none;
+            text-align: center;
+            white-space: nowrap;
+        }
+
+        .big-text:hover .tooltip-box {
+            display: block;
+        }
+
+        /* Pop animation */
+        @keyframes pop {
+            0% {
+                transform: scale(1);
+                color: #F7DC8B;
+            }
+
+            50% {
+                transform: scale(1.2);
+                color: #EEAB3A;
+                /* Change color on hover */
+            }
+
+            100% {
+                transform: scale(1);
+                color: #F7DC8B;
+            }
+        }
+
+        /* font */
+        @font-face {
+            font-family: 'Strippy';
+            src: url('./fonts/Strippy.ttf') format('truetype');
+        }
+
+        @font-face {
+            font-family: 'Human Sans';
+            src: url('./path-to-font/HumanSans-Regular.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        .big-text {
+            font-size: 50px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #F7DC8B;
+            letter-spacing: 70px;
+            font-family: 'Strippy', sans-serif;
+        }
+  
